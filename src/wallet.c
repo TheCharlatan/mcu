@@ -288,7 +288,8 @@ int wallet_generate_key(HDNode *node, const char *keypath, const uint8_t *privke
     idx = keypath_array[BIP44_LEVEL_PURPOSE];
     if (idx != (BIP44_PURPOSE_P2PKH + (BIP44_PURPOSE_HARDENED ? BIP44_PRIME : 0)) &&
             idx != (BIP44_PURPOSE_P2WPKH + (BIP44_PURPOSE_HARDENED ? BIP44_PRIME : 0)) &&
-            idx != (BIP44_PURPOSE_P2WPKH_P2SH + (BIP44_PURPOSE_HARDENED ? BIP44_PRIME : 0))) {
+            idx != (BIP44_PURPOSE_P2WPKH_P2SH + (BIP44_PURPOSE_HARDENED ? BIP44_PRIME : 0)) &&
+            idx != (BIP44_PURPOSE_COPAY + (BIP44_PURPOSE_HARDENED ? BIP44_PRIME : 0))) {
         return DBB_WARN_KEYPATH;
     }
 

@@ -39,6 +39,7 @@
 #define BIP44_PURPOSE_P2PKH 44 // BIP44 legacy
 #define BIP44_PURPOSE_P2WPKH_P2SH 49 // BIP49 segwit nested in pay to script hash
 #define BIP44_PURPOSE_P2WPKH 84 // BIP84 native segwit
+#define BIP44_PURPOSE_COPAY 48 // Copay multisig
 #define BIP44_COIN_TYPE_HARDENED true
 #define BIP44_COIN_TYPE_BTC 0
 #define BIP44_COIN_TYPE_TESTNET 1
